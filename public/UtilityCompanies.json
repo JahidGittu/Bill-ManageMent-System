@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "DESCO",
+    "type": "Electricity",
+    "logo": "https://i.ibb.co/PZ98WRPV/DESCO.jpg",
+    "slogan": "Empowering Dhaka North",
+    "details": "DESCO provides electricity to the northern parts of Dhaka city.",
+    "billingType": "prepaid"
+  },
+  {
+    "id": 2,
+    "name": "DPDC",
+    "type": "Electricity",
+    "logo": "https://i.ibb.co/SDYdWng8/DPDC.png",
+    "slogan": "Powering South Dhaka",
+    "details": "DPDC serves electricity to Dhaka South and nearby areas.",
+    "billingType": "both"
+  },
+  {
+    "id": 3,
+    "name": "WASA",
+    "type": "Water",
+    "logo": "https://i.ibb.co/DPdC4MRZ/Wasa.png",
+    "slogan": "Safe Water for All",
+    "details": "WASA is the primary provider of clean water in Dhaka.",
+    "billingType": "postpaid"
+  },
+  {
+    "id": 4,
+    "name": "Bakhrabad Gas",
+    "type": "Gas",
+    "logo": "https://i.ibb.co/bMnRD6Nx/Bakhrabad.png",
+    "slogan": "Reliable Gas Supply",
+    "details": "Bakhrabad Gas Distribution Company operates in Chattogram Division.",
+    "billingType": "postpaid"
+  },
+  {
+    "id": 5,
+    "name": "Titas Gas",
+    "type": "Gas",
+    "logo": "https://i.ibb.co/fzg47ZMN/Titash.png",
+    "slogan": "The Largest Gas Supplier",
+    "details": "Titas Gas is the leading gas distribution company in Bangladesh.",
+    "billingType": "both"
+  },
+  {
+    "id": 6,
+    "name": "Link3",
+    "type": "Internet",
+    "logo": "https://i.ibb.co/YThggzfk/Link3.png",
+    "slogan": "Stay Connected",
+    "details": "Link3 provides broadband and corporate internet solutions.",
+    "billingType": "postpaid"
+  },
+  {
+    "id": 7,
+    "name": "AmberIT",
+    "type": "Internet",
+    "logo": "https://i.ibb.co/3YT6RvBC/download.jpg",
+    "slogan": "Reliable Internet, Always",
+    "details": "AmberIT offers home and business internet services nationwide.",
+    "billingType": "prepaid"
+  },
+  {
+    "id": 8,
+    "name": "Carnival Internet",
+    "type": "Internet",
+    "logo": "https://i.ibb.co/TDV246XZ/Carnival.png",
+    "slogan": "Buffer-free Browsing",
+    "details": "Carnival Internet is known for stable residential internet in Bangladesh.",
+    "billingType": "postpaid"
+  },
+  {
+    "id": 9,
+    "name": "Jalalabad Gas",
+    "type": "Gas",
+    "logo": "https://i.ibb.co/zWWmFcpj/BGDCL.png",
+    "slogan": "Powering Sylhet Region",
+    "details": "Jalalabad Gas provides natural gas services in Sylhet Division.",
+    "billingType": "postpaid"
+  },
+  {
+    "id": 10,
+    "name": "REB",
+    "type": "Electricity",
+    "logo": "https://i.ibb.co/35NCg7YJ/REB.jpg",
+    "slogan": "Lighting Rural Bangladesh",
+    "details": "Rural Electrification Board brings power to rural areas.",
+    "billingType": "prepaid"
+  },
+  {
+    "id": 11,
+    "name": "Palli Bidyut",
+    "type": "Electricity",
+    "logo": "https://i.ibb.co/C5xS4s4Y/PB.png",
+    "slogan": "Empowering Villages",
+    "details": "Palli Bidyut provides electricity to remote and rural communities.",
+    "billingType": "both"
+  },
+  {
+    "id": 12,
+    "name": "BanglaCAT",
+    "type": "Generator Service",
+    "logo": "https://i.ibb.co/gFjmMnPF/Bangla-Cat.jpg",
+    "slogan": "Power When You Need It",
+    "details": "BanglaCAT offers power backup solutions through generators.",
+    "billingType": "postpaid"
+  },
+  {
+    "id": 13,
+    "name": "Summit Communications",
+    "type": "Internet",
+    "logo": "https://i.ibb.co/hFSWqZPv/SCL.jpg",
+    "slogan": "Nationwide Fiber Backbone",
+    "details": "Summit provides high-speed fiber-optic internet and data solutions.",
+    "billingType": "postpaid"
+  },
+  {
+    "id": 14,
+    "name": "Sheba.xyz",
+    "type": "Home Service",
+    "logo": "https://i.ibb.co/v6zN69JC/Shba.png",
+    "slogan": "Home Services, Simplified",
+    "details": "Sheba.xyz connects users with cleaning, plumbing, and AC repair services.",
+    "billingType": "prepaid"
+  },
+  {
+    "id": 15,
+    "name": "City Water Supply",
+    "type": "Water",
+    "logo": "https://i.ibb.co/Y4q1jhqs/Water-Bill.jpg",
+    "slogan": "Clean Water to Your Tap",
+    "details": "City Water Supply ensures regular water delivery in urban zones.",
+    "billingType": "postpaid"
+  }
+]

@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/x9jkXPK/Banner1.jpg",
+      "title": "Pay Bills Online and Save Time",
+      "description": "Pay electricity, gas, water, and internet bills with one click."
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/v612TnsF/Banner2.jpg",
+      "title": "Pay with Unlimited Payment Methods",
+      "description": "We ensure your payment is fast and completely secure."
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/tw0h5jtH/Banner3.png",
+      "title": "Fast & Secure Transactions ",
+      "description": "Our service is available all the time to help you."
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/m5wJDFQL/Banner4.jpg",
+      "title": "24/7 Service Available",
+      "description": "Our service is available all the time to help you."
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/jvgNCqkH/Banner5.png",
+      "title": "Pay Utility Bills Easily",
+      "description": "Our service is available all the time to help you."
+    }
+  ]
+  

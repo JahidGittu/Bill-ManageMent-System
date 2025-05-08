@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "company": "DESCO",
+    "type": "Electricity",
+    "logo": "https://i.ibb.co/PZ98WRPV/DESCO.jpg",
+    "amount": 1250,
+    "dueDate": "2025-05-25",
+    "status": "unpaid"
+  },
+  {
+    "id": 2,
+    "company": "DPDC",
+    "type": "Electricity",
+    "logo": "https://i.ibb.co/SDYdWng8/DPDC.png",
+    "amount": 980,
+    "dueDate": "2025-05-28",
+    "status": "unpaid"
+  },
+  {
+    "id": 3,
+    "company": "WASA",
+    "type": "Water",
+    "logo": "https://i.ibb.co/DPdC4MRZ/Wasa.png",
+    "amount": 410,
+    "dueDate": "2025-05-30",
+    "status": "unpaid"
+  },
+  {
+    "id": 4,
+    "company": "Titas Gas",
+    "type": "Gas",
+    "logo": "https://i.ibb.co/fzg47ZMN/Titash.png",
+    "amount": 890,
+    "dueDate": "2025-05-20",
+    "status": "unpaid"
+  },
+  {
+    "id": 5,
+    "company": "Link3",
+    "type": "Internet",
+    "logo": "https://i.ibb.co/YThggzfk/Link3.png",
+    "amount": 1200,
+    "dueDate": "2025-05-15",
+    "status": "unpaid"
+  },
+  {
+    "id": 6,
+    "company": "AmberIT",
+    "type": "Internet",
+    "logo": "https://i.ibb.co/3YT6RvBC/download.jpg",
+    "amount": 999,
+    "dueDate": "2025-05-18",
+    "status": "unpaid"
+  },
+  {
+    "id": 7,
+    "company": "Bakhrabad Gas",
+    "type": "Gas",
+    "logo": "https://i.ibb.co/bMnRD6Nx/Bakhrabad.png",
+    "amount": 720,
+    "dueDate": "2025-05-22",
+    "status": "unpaid"
+  },
+  {
+    "id": 8,
+    "company": "Carnival",
+    "type": "Internet",
+    "logo": "https://i.ibb.co/TDV246XZ/Carnival.png",
+    "amount": 150,
+    "dueDate": "2025-05-29",
+    "status": "unpaid"
+  },
+  {
+    "id": 9,
+    "company": "Palli Bidyut",
+    "type": "Electricity",
+    "logo": "https://i.ibb.co/C5xS4s4Y/PB.png",
+    "amount": 200,
+    "dueDate": "2025-06-01",
+    "status": "unpaid"
+  },
+  {
+    "id": 10,
+    "company": "Sheba.xyz",
+    "type": "Home Service",
+    "logo": "https://i.ibb.co/v6zN69JC/Shba.png",
+    "amount": 300,
+    "dueDate": "2025-05-31",
+    "status": "unpaid"
+  }
+]

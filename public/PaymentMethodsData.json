@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "bKash",
+    "type": "Mobile Banking",
+    "platform": "both",
+    "logo": "https://i.ibb.co/Q3JqBQ0t/bkash.png",
+    "advantages": ["Fast and widely accepted", "User-friendly interface"],
+    "disadvantages": ["2% service charge on some transactions"],
+    "discount": "5% off on utility bill"
+  },
+  {
+    "id": 2,
+    "name": "Nagad",
+    "type": "Mobile Banking",
+    "platform": "apk",
+    "logo": "https://i.ibb.co/Hpry73Lj/Naga.png",
+    "advantages": ["Low transfer fee", "Instant transaction"],
+    "disadvantages": ["Limited merchant integration"],
+    "discount": "3% cashback on electricity payment"
+  },
+  {
+    "id": 3,
+    "name": "Rocket",
+    "type": "Mobile Banking",
+    "platform": "both",
+    "logo": "https://i.ibb.co/XkKLD276/Rocket.png",
+    "advantages": ["Supported by Dutch-Bangla Bank", "Reliable network"],
+    "disadvantages": ["Old UI", "Limited app features"],
+    "discount": "2% bonus for WASA bills"
+  },
+  {
+    "id": 4,
+    "name": "Upay",
+    "type": "Mobile Banking",
+    "platform": "apk",
+    "logo": "https://i.ibb.co/wrhhNG79/Upay.png",
+    "advantages": ["Modern design", "Corporate friendly"],
+    "disadvantages": ["Still growing customer base"],
+    "discount": "4% discount on internet bill"
+  },
+  {
+    "id": 5,
+    "name": "SureCash",
+    "type": "Mobile Banking",
+    "platform": "apk",
+    "logo": "https://i.ibb.co/9HqQ73TW/SureCash.jpg",
+    "advantages": ["Used in educational institutions", "Simple process"],
+    "disadvantages": ["Not widely used commercially"],
+    "discount": "1% education bill cashback"
+  },
+  {
+    "id": 6,
+    "name": "Sonali Bank",
+    "type": "Direct Bank",
+    "platform": "web",
+    "logo": "https://i.ibb.co/5WLMpc0K/Sonali-Bank.png",
+    "advantages": ["Government owned", "Secure processing"],
+    "disadvantages": ["Slow interface"],
+    "discount": "3% off on gas bills"
+  },
+  {
+    "id": 7,
+    "name": "Islami Bank",
+    "type": "Direct Bank",
+    "platform": "web",
+    "logo": "https://i.ibb.co/VY2wqrZ7/Islami.png",
+    "advantages": ["Islamic Shariah compliant", "Wide branch network"],
+    "disadvantages": ["Old-style web banking"],
+    "discount": "5% off on water bills"
+  },
+  {
+    "id": 8,
+    "name": "BRAC Bank",
+    "type": "Direct Bank",
+    "platform": "both",
+    "logo": "https://i.ibb.co/vvcsqV3Q/Brack-Bank.png",
+    "advantages": ["Great app", "Fast processing"],
+    "disadvantages": ["Slightly higher charges"],
+    "discount": "2% discount on total bill"
+  },
+  {
+    "id": 9,
+    "name": "City Bank",
+    "type": "Direct Bank",
+    "platform": "both",
+    "logo": "https://i.ibb.co/QFz9RfHd/CityBank.png",
+    "advantages": ["Credit card support", "Fast digital services"],
+    "disadvantages": ["Limited free features"],
+    "discount": "3% cashback on any bill"
+  },
+  {
+    "id": 10,
+    "name": "Bank Asia",
+    "type": "Direct Bank",
+    "platform": "web",
+    "logo": "https://i.ibb.co/pr5h7DDh/BankAsia.jpg",
+    "advantages": ["Good mobile app", "Prompt support"],
+    "disadvantages": ["Limited ATM support in rural areas"],
+    "discount": "2% discount for online payment"
+  }
+]
