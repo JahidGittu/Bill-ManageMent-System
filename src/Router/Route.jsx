@@ -6,18 +6,19 @@ import { AuthContext } from '../Provider/AuthProvider';
 import Loading from '../Components/Loading';
 
 const Route = () => {
-    const { loading } = use(AuthContext)
+    const { loading, balance } = use(AuthContext)
+
 
     if (loading) {
         return <Loading></Loading>
     }
 
     return (
-        <div>
+        <div className='space-y-10'>
 
             <header>
                 <nav>
-                    <Navbar></Navbar>
+                    <Navbar balance={balance}></Navbar>
                 </nav>
             </header>
 
