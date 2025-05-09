@@ -53,11 +53,11 @@ const Login = () => {
         loginUser(email, password)
             .then(result => {
                 const user = result.user;
-                console.log(user);
+                // console.log(user);
                 navigate(location.state || "/");
             })
             .catch(error => {
-                console.log(error.message, error.code);
+                // console.log(error.message, error.code);
             });
     }
 
@@ -67,7 +67,7 @@ const Login = () => {
             await createUserwithGoogle();
             navigate(location.state || "/");
         } catch (error) {
-            console.error(error);
+            // console.error(error);
         } finally {
             setLoading(false);
         }

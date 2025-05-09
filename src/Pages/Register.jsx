@@ -56,7 +56,7 @@ const Register = () => {
         createUser(email, password)
             .then(result => {
                 const user = result.user;
-                console.log(user);
+                // console.log(user);
                 updateUser({
                     displayName: name,
                     photoURL: photo
@@ -67,11 +67,11 @@ const Register = () => {
                         navigate(location.state || "/");
                     })
                     .catch(error => {
-                        console.error("Update profile error:", error.message);
+                        // console.error("Update profile error:", error.message);
                     });
             })
             .catch(error => {
-                console.error("Create user error:", error.message);
+                // console.error("Create user error:", error.message);
             });
 
     }
@@ -82,7 +82,7 @@ const Register = () => {
             await createUserwithGoogle();
             navigate(location.state || "/");
         } catch (error) {
-            console.error(error);
+            // console.error(error);
         } finally {
             setLoading(false);
         }

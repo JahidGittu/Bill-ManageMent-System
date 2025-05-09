@@ -26,7 +26,7 @@ const AuthProvider = ({ children }) => {
     const stored = loadBalance();
     return isNaN(stored) ? 10000 : stored;
   });
-  console.log(balance);
+  // console.log(balance);
 
   useEffect(() => {
     saveBalance(balance);

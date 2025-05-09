@@ -42,7 +42,7 @@ const Profile = () => {
                 });
             })
             .catch(err => {
-                console.error(err);
+                // console.error(err);
                 toast.error("Failed to update profile.");
             });
     };
