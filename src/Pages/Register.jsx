@@ -64,7 +64,7 @@ const Register = () => {
                     .then(() => {
                         // Use `auth.currentUser` or re-fetch user if needed
                         setUser({ ...user, displayName: name, photoURL: photo });
-                        navigate(location.state || "/");
+                        setLoading(false)
                     })
                     .catch(error => {
                         // console.error("Update profile error:", error.message);
@@ -99,14 +99,14 @@ const Register = () => {
 
                         {/* Name */}
                         <label className="label">Name</label>
-                        <input name='name' type="text" className="input" placeholder="Name" />
+                        <input name='name' type="text" className="input" placeholder="Name" required />
 
                         {/* Photo */}
                         <label className="label">Photo URL</label>
-                        <input name='photo' type="text" className="input" placeholder="Photo URL" />
+                        <input name='photo' type="text" className="input" placeholder="Photo URL" required />
                         {/* Email */}
                         <label className="label">Email</label>
-                        <input name='email' type="email" className="input" placeholder="Email" />
+                        <input name='email' type="email" className="input" placeholder="Email" required />
                         {/* Password */}
                         <label className="label">Password</label>
                         <div className="relative">
@@ -115,6 +115,7 @@ const Register = () => {
                                 type={showPassword ? "text" : "password"}
                                 className="input w-full pr-10"
                                 placeholder="Password"
+                                required
                             />
                             <span
                                 onClick={() => setShowPassword(!showPassword)}
@@ -123,7 +124,6 @@ const Register = () => {
                                 {showPassword ? <FaEyeSlash /> : <FaEye />}
                             </span>
                         </div>
-
 
                         {
                             error && <p className='text-secondary'>{error}</p>

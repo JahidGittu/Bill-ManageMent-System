@@ -1,13 +1,12 @@
-
-// index.jsx বা main.jsx
+// Main.jsx or index.jsx
 import './App.css'
-import React from 'react'
-import { StrictMode } from 'react'
+import React, { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import {
   createBrowserRouter,
   RouterProvider,
 } from 'react-router'
+
 import Bill from './Pages/Bills'
 import Profile from './Pages/Profile'
 import Route from './Router/Route'
@@ -18,29 +17,28 @@ import AuthProvider from './Provider/AuthProvider'
 import HomeLayouts from './Layouts/HomeLayouts'
 import PrivateRoutes from './Provider/PrivateRoutes'
 
-// Example Components for Routes
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Route></Route>,
+    element: <Route />,
     children: [
       {
-        path: '',
-        element: <HomeLayouts></HomeLayouts>
+        path: "",
+        element: <HomeLayouts />
       }
     ]
   },
   {
     path: "/auth",
-    element: <AuthLayouts></AuthLayouts>,
+    element: <AuthLayouts />,
     children: [
       {
-        path: "/auth/login",
-        element: <Login></Login>
+        path: "login", // ✅ শুধুমাত্র path: "login"
+        element: <Login />
       },
       {
-        path: "/auth/register",
-        element: <Register></Register>
+        path: "register", // ✅ শুধুমাত্র path: "register"
+        element: <Register />
       }
     ]
   },
@@ -48,7 +46,7 @@ const router = createBrowserRouter([
     path: "/bills",
     element: (
       <PrivateRoutes>
-        <Bill></Bill>
+        <Bill />
       </PrivateRoutes>
     ),
     loader: () => fetch('/Bills.json')
@@ -57,7 +55,7 @@ const router = createBrowserRouter([
     path: "/profile",
     element: (
       <PrivateRoutes>
-        <Profile></Profile>
+        <Profile />
       </PrivateRoutes>
     )
   }

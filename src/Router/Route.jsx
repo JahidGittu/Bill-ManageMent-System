@@ -1,41 +1,34 @@
-import React, { use } from 'react';
-import Navbar from '../Components/Navbar';
-import { Outlet } from 'react-router';
-import Footer from '../Components/Footer';
-import { AuthContext } from '../Provider/AuthProvider';
-import Loading from '../Components/Loading';
+import React, { useContext } from 'react'
+import { Outlet } from 'react-router'
+import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer'
+import { AuthContext } from '../Provider/AuthProvider'
+import Loading from '../Components/Loading'
 
 const Route = () => {
-    const { loading, balance } = use(AuthContext)
+  const { loading, balance } = useContext(AuthContext)
 
+  if (loading) {
+    return <Loading />
+  }
 
-    if (loading) {
-        return <Loading></Loading>
-    }
+  return (
+    <div className='space-y-10'>
+      <header>
+        <nav>
+          <Navbar balance={balance} />
+        </nav>
+      </header>
 
-    return (
-        <div className='space-y-10'>
+      <main>
+        <Outlet />
+      </main>
 
-            <header>
-                <nav>
-                    <Navbar balance={balance}></Navbar>
-                </nav>
-            </header>
+      <footer>
+        <Footer />
+      </footer>
+    </div>
+  )
+}
 
-            <main>
-
-                <Outlet></Outlet>
-
-            </main>
-
-            <footer>
-
-                <Footer></Footer>
-
-            </footer>
-
-        </div>
-    );
-};
-
-export default Route;
+export default Route
