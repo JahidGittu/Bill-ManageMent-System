@@ -9,7 +9,7 @@ const Navbar = () => {
 
     const balance = parseFloat(localStorage.getItem("balance"))
 
-    console.log(balance);
+    // console.log(balance);
     const navigate = useNavigate();
 
 
@@ -75,14 +75,12 @@ const Navbar = () => {
                                                     <img src={user.photoURL} alt="profile" className="w-12 h-12 rounded-full" />
                                                 ) : user.displayName ? (
                                                     <div className="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center text-xl font-semibold">
-                                                        {user.displayName.charAt(0, 1).toUpperCase()}
+                                                        {user.displayName.charAt(0).toUpperCase()}
                                                     </div>
                                                 ) : (
                                                     <FaUserCircle className="text-3xl text-blue-600 cursor-pointer" />
                                                 )
                                             }
-
-
                                         </span>
                                     </MenuButton>
                                 </div>

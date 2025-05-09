@@ -1,13 +1,12 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
 const Banner = () => {
     const [banners, setBanners] = useState([]);
 
-    // Step 1: Create refs for buttons
     const prevRef = useRef(null);
     const nextRef = useRef(null);
 
@@ -20,18 +19,23 @@ const Banner = () => {
     return (
         <div className="w-full relative">
             <Swiper
-                modules={[Navigation]}
-                loop={true}
+                modules={[Navigation, Autoplay]}
+                loop={banners.length >= 3}
+                autoplay={{
+                    delay: 5000,
+                    disableOnInteraction: false,
+                }}
                 navigation={{
                     prevEl: prevRef.current,
                     nextEl: nextRef.current,
                 }}
                 onInit={(swiper) => {
-                    // Step 2: Assign refs after DOM is ready
-                    swiper.params.navigation.prevEl = prevRef.current;
-                    swiper.params.navigation.nextEl = nextRef.current;
-                    swiper.navigation.init();
-                    swiper.navigation.update();
+                    if (prevRef.current && nextRef.current) {
+                        swiper.params.navigation.prevEl = prevRef.current;
+                        swiper.params.navigation.nextEl = nextRef.current;
+                        swiper.navigation.init();
+                        swiper.navigation.update();
+                    }
                 }}
                 className="rounded-xl overflow-hidden relative"
             >
@@ -51,7 +55,7 @@ const Banner = () => {
                     </SwiperSlide>
                 ))}
 
-                {/* Step 3: Buttons with ref */}
+                {/* Navigation Buttons */}
                 <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 flex justify-center gap-2">
                     <button ref={prevRef} className="btn btn-xs">❮</button>
                     <button ref={nextRef} className="btn btn-xs">❯</button>
