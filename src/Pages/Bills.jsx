@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { useLoaderData} from 'react-router';
+import { Link, useLoaderData } from 'react-router';
 import Navbar from '../Components/Navbar';
 import { getPaidBills, savePaidBill, getBalance, setBalance } from '../Utility/LocalStorage';
+import { Bounce, toast, ToastContainer } from 'react-toastify';
+import { FaHome } from 'react-icons/fa';
 
 const Bills = () => {
     const data = useLoaderData();
@@ -38,11 +40,30 @@ const Bills = () => {
         // Save paid bill ID
         savePaidBill(bill.id);
 
-        alert("✅ Payment successful!");
+        toast('🦄 Bill Paid successfully!', {
+            position: "top-right",
+            autoClose: 3000,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            theme: "light",
+            transition: Bounce
+        });
     };
 
     return (
         <div>
+            <ToastContainer
+                position="top-right"
+                autoClose={3000}
+                hideProgressBar={false}
+                closeOnClick={false}
+                pauseOnHover
+                draggable
+                theme="light"
+                transition={Bounce}
+                style={{ marginTop: '80px' }}
+            />
             <header>
                 <Navbar balance={balance} />
             </header>
@@ -84,6 +105,9 @@ const Bills = () => {
                         </div>
                     ))}
                 </div>
+            </div>
+            <div className='flex justify-center items-center pb-20'>
+                <Link to="/" className='btn btn-primary hover:bg-primary/90'> <FaHome size={24}/> Back to Home Page</Link>
             </div>
         </div>
     );

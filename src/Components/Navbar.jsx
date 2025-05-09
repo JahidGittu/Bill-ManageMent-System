@@ -4,8 +4,12 @@ import { AuthContext } from '../Provider/AuthProvider';
 import { FaUserCircle } from 'react-icons/fa';
 import { Menu, MenuButton, MenuItems } from '@headlessui/react';
 
-const Navbar = ({ balance }) => {
-    const { user, logout } = useContext(AuthContext);
+const Navbar = () => {
+    const { user, logout, } = useContext(AuthContext);
+
+    const balance = parseFloat(localStorage.getItem("balance"))
+
+    console.log(balance);
     const navigate = useNavigate();
 
 
@@ -64,13 +68,20 @@ const Navbar = ({ balance }) => {
                             {/* Dropdown Menu using Headless UI */}
                             <Menu as="div" className="relative inline-block text-left">
                                 <div>
-                                    <MenuButton className="flex items-center focus:outline-none">
+                                    <MenuButton className="flex items-center focus:outline-none cursor-pointer">
                                         <span>
                                             {
-                                                user.photoURL
-                                                    ? <img src={user.photoURL} alt="profile" className="w-12 h-12 rounded-full" />
-                                                    : <FaUserCircle className="text-3xl text-blue-600 cursor-pointer" />
+                                                user.photoURL ? (
+                                                    <img src={user.photoURL} alt="profile" className="w-12 h-12 rounded-full" />
+                                                ) : user.displayName ? (
+                                                    <div className="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center text-xl font-semibold">
+                                                        {user.displayName.charAt(0, 1).toUpperCase()}
+                                                    </div>
+                                                ) : (
+                                                    <FaUserCircle className="text-3xl text-blue-600 cursor-pointer" />
+                                                )
                                             }
+
 
                                         </span>
                                     </MenuButton>
@@ -84,10 +95,10 @@ const Navbar = ({ balance }) => {
 
                                     <div className="px-4 py-2 border-b border-gray-400">
                                         <p className="text-sm text-gray-700">
-                                            Balance: <span className="font-semibold text-gray-900">{balance} BDT</span>
+                                            Balance: <span className="font-semibold text-gray-900">{balance.toFixed(2)} BDT</span>
                                         </p>
-
                                     </div>
+
                                     <div className="py-1 flex justify-center">
                                         <button
                                             onClick={handleLogout}

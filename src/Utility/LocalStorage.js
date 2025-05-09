@@ -14,7 +14,7 @@ export const savePaidBill = (id) => {
 
 export const getBalance = () => {
   const balance = localStorage.getItem('balance');
-  return balance ? parseFloat(balance) : 5000; // default 5000
+  return balance ? parseFloat(balance) : 10000;
 };
 
 export const setBalance = (amount) => {
