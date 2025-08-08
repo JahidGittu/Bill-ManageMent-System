@@ -116,7 +116,7 @@ To build a user-friendly platform where users can log in, manage their bills, ma
 ---
 
 
-## 🧭 Run Locally (Optional)
+## 🧭 Run Locally 
 
 ```bash
 git clone https://github.com/JahidGittu/Bill-ManageMent-System.git
@@ -124,7 +124,9 @@ cd Bill-ManageMent-System
 npm install
 npm run dev
 
-```bash
+
+```markdown
+---
 👨‍💻 Developer Info | ডেভেলপার তথ্য
 Developed by: Jahid Hossen
 GitHub: https://github.com/JahidGittu
