@@ -123,11 +123,11 @@ git clone https://github.com/JahidGittu/Bill-ManageMent-System.git
 cd Bill-ManageMent-System
 npm install
 npm run dev
+```
 
-
-```markdown
----
 👨‍💻 Developer Info | ডেভেলপার তথ্য
 Developed by: Jahid Hossen
-GitHub: https://github.com/JahidGittu
-Email: jahid.hossen.me@gmail.com
+🌐 GitHub: [JahidGittu](https://github.com/JahidGittu)
+🌍 Portfolio: <a href="http://jahid-portfolio.surge.sh/" target="_blank">jahidgittu.dev</a>
+✉️ Email: jahid.hossen.me@gmail.com
+📍 Location: Lakshmipur, Bangladesh
