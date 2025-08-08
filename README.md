@@ -126,7 +126,7 @@ npm run dev
 ```
 
 👨‍💻 Developer Info | ডেভেলপার তথ্য </br>
-Developed by: Jahid Hossen </br>
+ => Developed by: Jahid Hossen </br>
 🌐 GitHub: [JahidGittu](https://github.com/JahidGittu) </br>
 🌍 Portfolio: <a href="http://jahid-portfolio.surge.sh/" target="_blank">jahidgittu.dev</a> </br>
 ✉️ Email: jahid.hossen.me@gmail.com </br>
